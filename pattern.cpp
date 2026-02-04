@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+  int n;
+  cout<<"enter no. of row :";
+  cin>>n;
+        //   *
+       //   ***
+      //   ***** 
+     //   *******
+  for(int i=0;i<n;i++){
+    for(int j=(n/2)+1;j>i;j--){
+      cout<<" ";
+    }
+    for(int k=0;k<(2*i)+1;k++){
+      cout<<"*";
+    }
+
+    cout<<"\n";
+  }
+}
